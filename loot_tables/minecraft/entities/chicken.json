@@ -1,0 +1,91 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:feather",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:chicken",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "furnace_smelt",
+                            "conditions": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "properties": {
+                                        "on_fire": true
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                },
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.015,
+                    "looting_multiplier": 0.005
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:skull",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 3
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{SkullOwner:{Id:\"92deafa9-4307-42d9-b003-88601598d6c0\",Properties:{textures:[0:{Signature:\"Zf0KE0OBKcYKyy/A34+2j7c5ERxRcgzPeQMggLtaspGdGOZdoz48lfx6qyvyg4ukS7GWrY7rw1TnXCTXk17aciTE11TqzSIYrqxsKz2tQYsGcI1LjIcinfXXFqYSb7KI0lZs7IvJIx5hStaoWk44IwUk6cOIByYgvAAlUNOCce5NCCK30CKZRxsogE3ebUPX6vugap7F+tBGfy2rDXA9+Sb8199rXVEWlc6ELIl9L4G3Pa+oh2Kj5T8D0KU0fLR+gvWh63gFjv3W0HvZeqDZ8ktlSQTo9du3lCRiiM1II8fu4/rHo7dlw+VS7TxoxAGLkyeYbtskH53mUMjI/xIhhwnlBvOO2H6jjPPSZr/WxmypPWNUDvg2bf0F5Bf7xiOPLuHvHreCGvH/Um2jrFtWWPx+e/RMGxjnOHmoyqNsZYcLMitv7FtO9KoWuCGQvdZ/jtzg0NfjesKbjxRhv8HArqbQWb0H54yy00TUzjE2mDM+pU/C48wPk2juTHT5frtFLK4z+hCJW/L1NiZD0BvreVQSHJWeTzqhO6MM05ZE6NIuoNv1xQL5l1M6XFUblxTK+InGoDHECGwmOlp7BAmdE15tIUD95SLhIdCTHbheKbfCyN7Vwca0RhruQLQsQruyKfRgx2/gOBTt+c17gywdFAPKKCLdax3ruDbDkIAFG90=\",Value:\"eyJ0aW1lc3RhbXAiOjE0Nzk1OTQ3NzgwNTksInByb2ZpbGVJZCI6IjkyZGVhZmE5NDMwNzQyZDliMDAzODg2MDE1OThkNmMwIiwicHJvZmlsZU5hbWUiOiJNSEZfQ2hpY2tlbiIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTYzODQ2OWE1OTljZWVmNzIwNzUzNzYwMzI0OGE5YWIxMWZmNTkxZmQzNzhiZWE0NzM1YjM0NmE3ZmFlODkzIn19fQ==\"}]},Name:\"Chicken\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

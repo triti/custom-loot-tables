@@ -1,0 +1,98 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:leather",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:beef",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        },
+                        {
+                            "function": "furnace_smelt",
+                            "conditions": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "properties": {
+                                        "on_fire": true
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                },
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.015,
+                    "looting_multiplier": 0.005
+                }
+            ],
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:skull",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": 3
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{SkullOwner:{Id:\"f159b274-c22e-4340-b7c1-52abde147713\",Properties:{textures:[0:{Signature:\"UqQ2Ty+4/Ns9FRjGZHDh8K+nXKpJ5n1+NW++eUiw05/mppKSEuYcNTUTR0/0en3P1iln+r/Zc7yU5LbUwx8l1beJ8jYQu/cmIasl6X9G7mE3TMqq0O6eIoSdPc1DjFvMYxSqnTxamsUJ9QnYMrBSj7dtYFKAx9Ud5EiVrySvANR72pF+GglkNg939FqIl+lgcwoIZHtxDILh/yJjgNjeyt7N63oGgfF6upfQ1kprMydlvzGT+AWNytw/izzlFOkeS0OHzI4LmgpLixWshr1BKcht1fODj7Jy3LwXDJbIGfojVwAcFHgfzW60tWEd8DVX3QaGCV9i0nbN9YteVTDSJcstM1x72br7bE6kt595J2DwbiupG3RnQLtvvCHnstnoGKfSRjEO52fkxyHfwcWVY4L8nLrZVxBao5YRzU7O/1KftMPKCCVMKP/+gEQQVvXj15J4YKKHa1eXpP1csew8SXdYR2D8sVh9xd+ZgnYl5xdpXZ+8W9sxCfVNI2Za8RtecBBGbt8R6B5GCU9yhupJMC4tz+nec1UCtibzzSdYWqrwsO/fJXunaoUof+CdFxnIq1g/cuJHQSQfQh/qgKXnZ3SkotWOZ0c2y+fXZvOE4ycDZ9K01HKCq3xc2a5m/m41J8Dl0Qu9uL4w/jRcV+JEkZ0vIgnu6DR2X/uh1KPdmlU=\",Value:\"eyJ0aW1lc3RhbXAiOjE0Nzk1OTYwMjE2NjgsInByb2ZpbGVJZCI6ImYxNTliMjc0YzIyZTQzNDBiN2MxNTJhYmRlMTQ3NzEzIiwicHJvZmlsZU5hbWUiOiJNSEZfQ293Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81ZDZjNmVkYTk0MmY3ZjVmNzFjMzE2MWM3MzA2ZjRhZWQzMDdkODI4OTVmOWQyYjA3YWI0NTI1NzE4ZWRjNSJ9fX0=\"}]},Name:\"Cow\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 15,
+                    "quality": -1,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"minecraft:chests/abandoned_mineshaft\"},display:{Name:\"Cobweb Covered Chest\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"minecraft:chests/desert_pyramid\"},display:{Name:\"Desiccated Chest\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 5,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"minecraft:chests/igloo_chest\"},display:{Name:\"Frostbitten Chest\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"minecraft:chests/jungle_temple\"},display:{Name:\"Mossy Chest\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 15,
+                    "quality": -1,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"minecraft:chests/simple_dungeon\"},display:{Name:\"Dank Chest\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 15,
+                    "quality": -2,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"minecraft:chests/spawn_bonus_chest\"},display:{Name:\"Unused Chest\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"minecraft:chests/stronghold_corridor\"},display:{Name:\"Forgotten Chest\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"minecraft:chests/stronghold_crossing\"},display:{Name:\"Forgotten Chest\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 3,
+                    "quality": 3,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"minecraft:chests/stronghold_library\"},display:{Name:\"Library Chest\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 15,
+                    "quality": -1,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"minecraft:chests/village_blacksmith\"},display:{Name:\"Well Used Chest\"}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 5,
+                    "quality": 2,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{BlockEntityTag:{LootTable:\"minecraft:chests/woodland_mansion\"},display:{Name:\"Ornate Chest\"}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
