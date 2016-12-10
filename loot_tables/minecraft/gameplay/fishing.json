@@ -23,7 +23,7 @@
                 },
                 {
                     "type": "loot_table",
-                    "name": "minecraft:gameplay/fishing/chest",
+                    "name": "naturalrealms:gameplay/fishing/chest",
                     "weight": 1
                 }
             ]
